@@ -187,6 +187,52 @@ nav {
 .cert-row { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 0.875rem; }
 .cert-yr { color: var(--gray-500); font-size: 0.8rem; }
 
+/* ── PHILOSOPHY PAGE ── */
+.phil-page { padding: 56px 1.5rem 80px; }
+
+.phil-lead {
+  max-width: 700px; margin-bottom: 4rem;
+  padding: 2rem 2.25rem; border-left: 3px solid var(--black);
+}
+.phil-lead p { font-family: var(--serif); font-size: 1.375rem; line-height: 1.5; color: var(--black); }
+.phil-lead-sub { font-family: var(--sans) !important; font-size: 1rem !important; color: var(--gray-700) !important; margin-top: 0.75rem; line-height: 1.75 !important; }
+
+.phil-sections { display: flex; flex-direction: column; gap: 0; }
+
+.phil-section {
+  display: grid; grid-template-columns: 48px 1fr;
+  gap: 2rem; padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 560px) { .phil-section { grid-template-columns: 1fr; gap: 0.5rem; } }
+
+.phil-section-num { font-size: 0.75rem; font-weight: 700; color: var(--gray-300); padding-top: 6px; letter-spacing: 0.05em; }
+.phil-section-body h2 { font-family: var(--serif); font-size: 1.25rem; font-weight: normal; margin-bottom: 0.875rem; }
+.phil-section-body p { font-size: 0.9375rem; color: var(--gray-700); line-height: 1.8; }
+.phil-section-body p + p { margin-top: 0.75rem; }
+
+.loop-steps { display: flex; flex-direction: column; gap: 0; margin-bottom: 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.loop-step { display: flex; align-items: baseline; gap: 1rem; padding: 0.875rem 1.25rem; border-bottom: 1px solid var(--border); }
+.loop-step:last-child { border-bottom: none; }
+.loop-label { font-size: 0.875rem; font-weight: 700; min-width: 100px; color: var(--black); }
+.loop-desc { font-size: 0.875rem; color: var(--gray-700); }
+.loop-note { font-size: 0.875rem; color: var(--gray-500); font-style: italic; line-height: 1.7; }
+
+.pbn-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 1.25rem; }
+@media (max-width: 560px) { .pbn-grid { grid-template-columns: 1fr; } }
+.pbn-item { background: var(--white); padding: 1.125rem 1.25rem; }
+.pbn-label { font-size: 0.875rem; font-weight: 700; margin-bottom: 0.3rem; }
+.pbn-desc { font-size: 0.8rem; color: var(--gray-500); line-height: 1.5; }
+
+.refusal-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.refusal-list li { font-size: 0.9375rem; color: var(--gray-700); padding-left: 1.25rem; position: relative; }
+.refusal-list li::before { content: "—"; position: absolute; left: 0; color: var(--gray-300); }
+
+.influences-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.influence-item { padding: 1.125rem 1.25rem; background: var(--gray-100); border-radius: 8px; }
+.influence-title { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; }
+.influence-sub { font-size: 0.8rem; color: var(--gray-500); line-height: 1.5; }
+
 /* ── FOOTER ── */
 footer { border-top: 1px solid var(--border); padding: 2rem 1.5rem; margin-top: 2rem; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }

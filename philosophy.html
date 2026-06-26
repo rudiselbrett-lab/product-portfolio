@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philosophy — Brett Rudisel</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Brett Rudisel</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="philosophy.html" class="active">Philosophy</a></li>
+      <li><a href="toolkit.html">PM Toolkit</a></li>
+      <li><a href="experience.html">Experience</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">Philosophy</p>
+      <h1>How I think about product work</h1>
+      <p class="page-sub">The beliefs, principles, and operating patterns I return to — especially when things get complicated.</p>
+    </div>
+  </section>
+
+  <div class="container phil-page">
+
+    <div class="phil-lead">
+      <p>Did a real person's life get easier, and can you prove they're using what you built?</p>
+      <p class="phil-lead-sub">Everything else — the specs, the ceremonies, the roadmaps — is in service of that or it's waste. Too many teams measure themselves by features shipped instead of problems solved. My job is to resist that drift.</p>
+    </div>
+
+    <div class="phil-sections">
+
+      <div class="phil-section">
+        <div class="phil-section-num">01</div>
+        <div class="phil-section-body">
+          <h2>Start with the people who have the problem</h2>
+          <p>I lean toward a forward-deployed model: embed with the business, run discovery alongside them, and turn operational pain into a clear opportunity before anyone writes code. I don't wait for tidy requirements to land on my desk, because they're usually wrong when they do.</p>
+          <p>Finding the right problem is the hard part. Once it's understood, building is the easy part.</p>
+        </div>
+      </div>
+
+      <div class="phil-section">
+        <div class="phil-section-num">02</div>
+        <div class="phil-section-body">
+          <h2>How I work: a simple loop</h2>
+          <div class="loop-steps">
+            <div class="loop-step"><span class="loop-label">Listen</span><span class="loop-desc">Before assuming I know the answer</span></div>
+            <div class="loop-step"><span class="loop-label">Orient</span><span class="loop-desc">Around where the real leverage is</span></div>
+            <div class="loop-step"><span class="loop-label">Own a Wedge</span><span class="loop-desc">Pick a narrow, winnable first slice instead of solving everything at once</span></div>
+            <div class="loop-step"><span class="loop-label">Push</span><span class="loop-desc">Into production — nothing counts until it ships</span></div>
+            <div class="loop-step"><span class="loop-label">Measure</span><span class="loop-desc">What happened and feed it back</span></div>
+          </div>
+          <p class="loop-note">The discipline isn't knowing the steps. It's refusing to skip Listen and Orient when I'm sure I already have the answer — which is exactly when I'm most likely to be wrong.</p>
+        </div>
+      </div>
+
+      <div class="phil-section">
+        <div class="phil-section-num">03</div>
+        <div class="phil-section-body">
+          <h2>How I prioritize: sequence, don't score</h2>
+          <p>I use Weighted Shortest Job First (WSJF) — weighing the value and urgency of a piece of work against the effort to deliver it, and doing the high-value, low-effort work first. It keeps me honest about cost of delay and stops the roadmap from filling up with expensive bets that keep getting deferred.</p>
+        </div>
+      </div>
+
+      <div class="phil-section">
+        <div class="phil-section-num">04</div>
+        <div class="phil-section-body">
+          <h2>How I compose a release: Proven, Better, New</h2>
+          <div class="pbn-grid">
+            <div class="pbn-item">
+              <div class="pbn-label">Proven</div>
+              <div class="pbn-desc">A known win I'm confident in</div>
+            </div>
+            <div class="pbn-item">
+              <div class="pbn-label">Better</div>
+              <div class="pbn-desc">A clear improvement on something that already exists</div>
+            </div>
+            <div class="pbn-item">
+              <div class="pbn-label">New</div>
+              <div class="pbn-desc">An experimental bet worth taking even if it fails</div>
+            </div>
+          </div>
+          <p>A roadmap built only on proven wins goes stale. One built only on new bets is reckless. The balance is the point.</p>
+        </div>
+      </div>
+
+      <div class="phil-section">
+        <div class="phil-section-num">05</div>
+        <div class="phil-section-body">
+          <h2>With AI: evals over specs</h2>
+          <p>I'd rather define how we'll know it's working than write a long document nobody opens after sprint two. A spec describes intent; an eval describes reality. I define the test for "good" up front, in measurable terms, and build toward passing it.</p>
+          <p>That matters more as systems get less deterministic. The only way to trust an AI product in production is to decide in advance how you'd catch it failing.</p>
+        </div>
+      </div>
+
+      <div class="phil-section">
+        <div class="phil-section-num">06</div>
+        <div class="phil-section-body">
+          <h2>On platforms: own the control plane, rent the execution plane</h2>
+          <p>The durable advantage is in owning the governance, routing, evaluation, and standards that make many use cases safe and reusable — not in rebuilding what a vendor API already does well.</p>
+          <p>The tension I keep returning to is depth versus breadth. A bank is almost always better served by one or two deep, reusable capabilities than by a long tail of shallow pilots that duplicate each other. Saying no to those pilots is some of the most important work I do.</p>
+        </div>
+      </div>
+
+      <div class="phil-section">
+        <div class="phil-section-num">07</div>
+        <div class="phil-section-body">
+          <h2>Governance is a feature, not a tax</h2>
+          <p>In a regulated environment, controls done well are what let you move fast. The teams that get this ship more, not less — because they've made the safe path the easy path.</p>
+        </div>
+      </div>
+
+      <div class="phil-section">
+        <div class="phil-section-num">08</div>
+        <div class="phil-section-body">
+          <h2>What I refuse to do</h2>
+          <ul class="refusal-list">
+            <li>Build for the roadmap's sake</li>
+            <li>Chase novelty with no route to adoption</li>
+            <li>Let process exist for its own sake</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="phil-section">
+        <div class="phil-section-num">09</div>
+        <div class="phil-section-body">
+          <h2>Influences</h2>
+          <div class="influences-grid">
+            <div class="influence-item">
+              <div class="influence-title">Escaping the Build Trap</div>
+              <div class="influence-sub">Melissa Perri — escape the feature factory</div>
+            </div>
+            <div class="influence-item">
+              <div class="influence-title">Playing to Win</div>
+              <div class="influence-sub">Lafley & Martin — strategy is hard choices about where to play and how to win</div>
+            </div>
+            <div class="influence-item">
+              <div class="influence-title">The Lean Startup</div>
+              <div class="influence-sub">Eric Ries — build, measure, learn, and kill what isn't working</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>Brett Rudisel · Charlotte, NC</p>
+    <p><a href="mailto:rudisel.brett@gmail.com">rudisel.brett@gmail.com</a> · <a href="https://linkedin.com/in/brett-rudisel" target="_blank">LinkedIn</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
