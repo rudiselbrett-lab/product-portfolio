@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies — Brett Rudisel</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Brett Rudisel</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="case-studies.html" class="active">Case Studies</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="toolkit.html">PM Toolkit</a></li>
+      <li><a href="experience.html">Experience</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">Case Studies</p>
+      <h1>How I think through hard product problems</h1>
+      <p class="page-sub">Three detailed case studies covering enterprise GenAI, agentic AI, and multi-client product delivery.</p>
+    </div>
+  </section>
+
+  <section class="cs-nav-strip">
+    <div class="container">
+      <a href="#ally" class="cs-nav-item">Ally Financial</a>
+      <a href="#pwc" class="cs-nav-item">PwC</a>
+      <a href="#terazo" class="cs-nav-item">Terazo</a>
+    </div>
+  </section>
+
+  <div class="container cs-page">
+
+    <!-- ALLY -->
+    <article class="cs" id="ally">
+      <div class="cs-header">
+        <div class="cs-tags">
+          <span class="tag accent">GenAI Platform</span>
+          <span class="tag">Enterprise Adoption</span>
+          <span class="tag">AI Governance</span>
+          <span class="tag">Financial Services</span>
+        </div>
+        <h2>Scaling an Enterprise GenAI Platform Across 10 Business Lines</h2>
+        <p class="cs-company">Ally Financial · AI Product Manager · November 2024–Present</p>
+      </div>
+
+      <div class="metrics-strip">
+        <div class="metric"><div class="metric-val">9% → 21%</div><div class="metric-lbl">Platform adoption</div></div>
+        <div class="metric"><div class="metric-val">4,500+</div><div class="metric-lbl">Monthly active users</div></div>
+        <div class="metric"><div class="metric-val">9 → 43</div><div class="metric-lbl">Production AI use cases</div></div>
+        <div class="metric"><div class="metric-val">~50%</div><div class="metric-lbl">Onboarding time reduction</div></div>
+        <div class="metric"><div class="metric-val">100%</div><div class="metric-lbl">Traffic covered by guardrails</div></div>
+        <div class="metric"><div class="metric-val">~30%</div><div class="metric-lbl">Low-value initiatives screened</div></div>
+      </div>
+
+      <div class="cs-two-col">
+        <div class="cs-block">
+          <h3>The Problem</h3>
+          <p>Ally.ai was available to thousands of employees but only 9% were using it. The platform existed — the question was why it hadn't become something business lines depended on, and what it would take to change that.</p>
+          <p>Low adoption wasn't a marketing problem. It was a product problem: the platform didn't yet solve enough real problems for enough people to become habitual.</p>
+        </div>
+        <div class="cs-block">
+          <h3>What I Did</h3>
+          <p>I used a forward-deployed model — embedding directly with business lines to understand their actual operational challenges before proposing any AI solutions. The question I kept asking: <em>what are you doing manually today that you shouldn't be?</em></p>
+          <p>From that discovery work, I built reusable implementation patterns and no-code/low-code paths that cut onboarding time by ~50% and enabled 3x more teams to ship use cases with minimal engineering support.</p>
+        </div>
+      </div>
+
+      <div class="cs-callout">
+        <h3>The Hard Part: Portfolio Discipline</h3>
+        <p>When a GenAI platform is available enterprise-wide, every business line wants to build something. Most ideas aren't bad — they're just not worth the investment compared to the alternatives. I led portfolio operating reviews that screened out ~30% of incoming initiatives and concentrated investment on the 13+ strategic products representing 80%+ of portfolio value.</p>
+        <p>Saying no to good ideas to protect great ones is real product work. Having a structured, defensible prioritization process is what makes it possible inside a large organization with many stakeholders.</p>
+      </div>
+
+      <div class="cs-callout">
+        <h3>Governance as a Product Feature</h3>
+        <p>In financial services, risk and compliance aren't optional. I embedded enterprise AI governance into the delivery process — not as a post-launch audit, but as a milestone. Every use case goes through risk classification at intake, MRM review where required, and ships with guardrails and LLM observability in place. 100% platform traffic coverage isn't a compliance stat — it's what makes the platform trustworthy enough to scale.</p>
+      </div>
+
+      <div class="cs-block">
+        <h3>What I Learned</h3>
+        <p>The forward-deployed model works. Sitting inside a business line long enough to understand their real problems — not just their stated requests — produces better product decisions and faster adoption. Governance done right enables velocity rather than killing it. And portfolio discipline is a product skill: concentrating investment is harder than it sounds inside a large organization.</p>
+      </div>
+    </article>
+
+    <div class="cs-divider"></div>
+
+    <!-- PWC -->
+    <article class="cs" id="pwc">
+      <div class="cs-header">
+        <div class="cs-tags">
+          <span class="tag accent">Agentic AI</span>
+          <span class="tag">0→1 Delivery</span>
+          <span class="tag">6-Week Sprint</span>
+        </div>
+        <h2>Delivering an Agentic AI MVP in Six Weeks</h2>
+        <p class="cs-company">PricewaterhouseCoopers · Associate Product Manager · June 2023–November 2024</p>
+      </div>
+
+      <div class="cs-two-col">
+        <div class="cs-block">
+          <h3>The Situation</h3>
+          <p>PwC wanted to explore how agentic AI could be applied to a real internal workflow — not as a research project, but as a working MVP with a live pilot team using it. The timeline was six weeks. The capability was emerging and the problem definition was deliberately open.</p>
+        </div>
+        <div class="cs-block">
+          <h3>My Approach</h3>
+          <p>The first thing I did was narrow the problem. Rather than showcasing everything agentic AI <em>could</em> do, I pushed the team to identify the one workflow where an agent that could reason, retrieve, and act would make a material difference — in six weeks. That question forced us to choose.</p>
+          <p>I defined success metrics and OKRs with senior product leadership before any engineering started, and managed backlog across a 20-person cross-functional team through the full sprint.</p>
+        </div>
+      </div>
+
+      <div class="cs-callout">
+        <h3>What I Learned About Agentic Products</h3>
+        <p>Agentic AI products need tighter constraints than regular software, not looser ones. When the system can reason and act autonomously, the surface area for unexpected behavior is much larger. Scoping tightly isn't timidity — it's how you get something trustworthy into users' hands fast.</p>
+        <p>"Working MVP with a pilot team using it" and "impressive demo for executives" are different things. Keeping those goals distinct shaped every prioritization decision we made. OKRs set at the start of an AI project are unusually high-leverage — because the technology is new and outcomes are uncertain, agreed-upon success criteria prevent the goalpost from moving when you hit unexpected results.</p>
+      </div>
+    </article>
+
+    <div class="cs-divider"></div>
+
+    <!-- TERAZO -->
+    <article class="cs" id="terazo">
+      <div class="cs-header">
+        <div class="cs-tags">
+          <span class="tag accent">Multi-Client Delivery</span>
+          <span class="tag">Discovery</span>
+          <span class="tag">Retail · Healthcare · Logistics · SaaS</span>
+        </div>
+        <h2>Product Strategy Across 7+ Concurrent Client Engagements</h2>
+        <p class="cs-company">Terazo · Engagement Lead / Product Manager · March 2021–June 2023</p>
+      </div>
+
+      <div class="metrics-strip">
+        <div class="metric"><div class="metric-val">7+</div><div class="metric-lbl">Concurrent engagements</div></div>
+        <div class="metric"><div class="metric-val">$3M+</div><div class="metric-lbl">Revenue generated</div></div>
+        <div class="metric"><div class="metric-val">4</div><div class="metric-lbl">Industries served</div></div>
+      </div>
+
+      <div class="cs-two-col">
+        <div class="cs-block">
+          <h3>The Work</h3>
+          <p>At Terazo I owned the full product lifecycle across multiple simultaneous client engagements — from early discovery through shipped software. Each client came with symptoms, not diagnoses. My job was to get underneath those statements and identify what was actually worth building.</p>
+        </div>
+        <div class="cs-block">
+          <h3>Representative Pivots</h3>
+          <p><strong>Retail:</strong> A client asked for data visibility. Discovery revealed the real problem was decision latency — managers had the data and didn't know what to act on. We built recommendations, not reports.</p>
+          <p><strong>Logistics:</strong> Field teams weren't using dashboards. Pivoted the product to push notifications at key decision points based on user research — before development started.</p>
+          <p><strong>Healthcare:</strong> Compliance constraints shaped the architecture from day one — audit trails and role-based access weren't features added at the end, they were requirements that structured the build.</p>
+        </div>
+      </div>
+
+      <div class="cs-callout">
+        <h3>What Seven Concurrent Engagements Teaches You</h3>
+        <p>Ambiguity is the default, not the exception. Across seven simultaneous engagements, no client ever handed me a clear, correct problem statement. The ability to run structured discovery and arrive at a defensible product direction — fast — became my most reliable skill.</p>
+        <p>Shipping is table stakes. Getting a client's team to change how they work is the real deliverable. I learned to design for adoption from day one: feedback loops, change management hooks, and success metrics that reflect behavioral change, not feature launches.</p>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>Brett Rudisel · Charlotte, NC</p>
+    <p><a href="mailto:rudisel.brett@gmail.com">rudisel.brett@gmail.com</a> · <a href="https://linkedin.com/in/brett-rudisel" target="_blank">LinkedIn</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

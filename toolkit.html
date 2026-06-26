@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PM Toolkit — Brett Rudisel</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Brett Rudisel</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="toolkit.html" class="active">PM Toolkit</a></li>
+      <li><a href="experience.html">Experience</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">PM Toolkit</p>
+      <h1>How I think, decide, and deliver</h1>
+      <p class="page-sub">The frameworks, mental models, and operating principles I use across discovery, prioritization, AI governance, and delivery.</p>
+    </div>
+  </section>
+
+  <div class="container toolkit-page">
+
+    <div class="toolkit-section">
+      <h2>Discovery & Opportunity Assessment</h2>
+      <div class="toolkit-grid">
+        <div class="toolkit-card">
+          <h3>Forward-Deployed Discovery</h3>
+          <p>Before writing any requirements, I embed directly with users and business line teams to understand their real operational problems. The question I lead with: <em>what are you doing manually today that you shouldn't be?</em></p>
+          <p>This approach consistently surfaces higher-value problems than stakeholder interviews alone — and builds the trust that makes adoption easier later.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>Problem vs. Solution Separation</h3>
+          <p>Clients and stakeholders arrive with solutions, not problems. My discovery process works backwards: what outcome do they need, what's preventing it today, and is the proposed solution actually the right one?</p>
+          <p>At Terazo, this pivot — from "we need a dashboard" to "we need push notifications at decision points" — happened before development started and saved months of rework.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>Discovery in Regulated Environments</h3>
+          <p>Standard discovery assumes fast prototyping. In financial services and healthcare, data access for research is constrained and compliance is a first-class constraint.</p>
+          <p>I bring risk and compliance stakeholders into problem framing — not just solution review — so the product direction is viable before development starts.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>AI Product Strategy</h2>
+      <div class="toolkit-grid">
+        <div class="toolkit-card">
+          <h3>Evals Before Build</h3>
+          <p>For any AI feature, I define what "good" looks like before engineering starts. What does success mean to a user vs. to a metric? Where do the failure modes live, and how do we weight them?</p>
+          <p>Getting alignment on those questions early prevents the expensive pivots that happen when a model ships and nobody agrees on whether it's working.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>Tight Scoping for Agentic Systems</h3>
+          <p>Agentic AI products need tighter constraints than regular software, not looser ones. When a system can reason and act autonomously, the surface area for unexpected behavior is large.</p>
+          <p>I scope agentic work to a single, bounded workflow where the agent's actions are auditable and the fallback for uncertainty is clear.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>Reusable Implementation Patterns</h3>
+          <p>One-off AI builds don't scale. I identify common use case types (summarization, Q&A, workflow automation, structured extraction) and systematize their delivery into reusable patterns.</p>
+          <p>At Ally Financial, this cut onboarding time by ~50% and enabled 3x more teams to ship with minimal engineering support.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>Portfolio Prioritization</h2>
+      <div class="toolkit-grid">
+        <div class="toolkit-card">
+          <h3>Intake Screening</h3>
+          <p>Every incoming opportunity gets a structured intake: what's the problem, who's affected, who owns the outcome, and what does better look like in measurable terms? An idea without a business line sponsor and a measurable outcome doesn't proceed.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>Four-Dimension Scoring</h3>
+          <p>I score opportunities on business value, strategic alignment, feasibility, and risk profile. This separates the "sounds cool" ideas from the ones worth investing in — and produces a prioritization that's defensible to stakeholders who didn't make the cut.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>Concentration Over Coverage</h3>
+          <p>More AI use cases isn't better. I apply an 80/20 lens to portfolios: identify the 13 things that represent 80% of the value and protect them from being crowded out by the long tail of acceptable-but-not-great ideas.</p>
+          <p>At Ally, screening out ~30% of low-value initiatives is what made the high-value ones possible.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>AI Governance</h2>
+      <div class="toolkit-grid">
+        <div class="toolkit-card">
+          <h3>Governance as Infrastructure</h3>
+          <p>The wrong mental model: governance is a checklist you complete at the end to get approval to ship. The right model: governance is infrastructure built into the product and delivery process.</p>
+          <p>Safety controls, content filters, and PII protection are product requirements with acceptance criteria — tested in QA, not added post-launch.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>LLM Observability as a Data Product</h3>
+          <p>Every prompt and response on the platform should be logged, tagged, and queryable. This serves risk teams (audit capability) and product teams (prompt quality, failure mode identification) simultaneously.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>MRM Review as a Delivery Milestone</h3>
+          <p>In financial services, Model Risk Management review is required for certain AI use cases. I map the MRM path at intake and build required documentation into the sprint process.</p>
+          <p>When MRM review is predictable, it's fast. When it's ad hoc, it's slow and expensive.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>Delivery & Adoption</h2>
+      <div class="toolkit-grid">
+        <div class="toolkit-card">
+          <h3>Adoption by Design</h3>
+          <p>I design for adoption from day one — not as a post-launch concern. This means embedding feedback loops in the product, identifying change management requirements during discovery, and setting success metrics that reflect behavioral change, not feature availability.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>OKRs at the Start</h3>
+          <p>I define success metrics before engineering starts, especially for AI products where outcomes are uncertain. Agreed-upon success criteria prevent the goalpost from moving when unexpected results appear — which they always do.</p>
+        </div>
+        <div class="toolkit-card">
+          <h3>Decision Docs</h3>
+          <p>I write down the tradeoffs on non-obvious decisions. When a choice is reversible, I move fast. When it's not, I slow down and make the reasoning legible — so future teams understand why, not just what.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolkit-section">
+      <h2>Certifications & Training</h2>
+      <div class="cert-grid">
+        <div class="cert-item">
+          <div class="cert-name">SAFe 6 POPM</div>
+          <div class="cert-org">Scaled Agile · 2024</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">AI For Everyone</div>
+          <div class="cert-org">DeepLearning.AI · 2024</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Digital Product Management</div>
+          <div class="cert-org">UVA Darden · 2024</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Agile Meets Design Thinking</div>
+          <div class="cert-org">UVA Darden · 2024</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">SAFe 5 Scrum Master</div>
+          <div class="cert-org">Scaled Agile · 2022</div>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Certified ScrumMaster (CSM)</div>
+          <div class="cert-org">Scrum Alliance · 2021</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>Brett Rudisel · Charlotte, NC</p>
+    <p><a href="mailto:rudisel.brett@gmail.com">rudisel.brett@gmail.com</a> · <a href="https://linkedin.com/in/brett-rudisel" target="_blank">LinkedIn</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
