@@ -601,6 +601,63 @@ nav {
 .cert-yr { font-size: 0.775rem; color: var(--text-3); }
 
 /* ─────────────────────────────────────────
+   WORK PAGE
+───────────────────────────────────────── */
+.work-page { padding: 56px 2rem 88px; display: flex; flex-direction: column; gap: 0; }
+
+.work-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.work-section:first-child { padding-top: 0; }
+.work-section:last-child { border-bottom: none; }
+
+.work-section-header { margin-bottom: 1.25rem; }
+
+.work-section-meta {
+  display: flex; align-items: center; gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.work-company {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 3px 10px; border-radius: 100px;
+}
+.work-company-sep {
+  font-size: 0.75rem; color: var(--text-3); font-weight: 500;
+}
+
+.work-section-header h2 {
+  font-family: var(--serif);
+  font-size: 1.25rem; font-weight: normal;
+  margin-bottom: 0.35rem;
+}
+.work-section-desc {
+  font-size: 0.875rem; color: var(--text-3); line-height: 1.6;
+}
+
+.work-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 0;
+}
+.work-list li {
+  font-size: 0.875rem; color: var(--text-2);
+  line-height: 1.7;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--bg-subtle);
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+}
+.work-list li:last-child { border-bottom: none; }
+
+.work-co {
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--text-3);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ─────────────────────────────────────────
    FOOTER
 ───────────────────────────────────────── */
 footer {
