@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Projects — Brett Rudisel</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Brett Rudisel</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="pet-projects.html" class="active">Pet Projects</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">Pet Projects</p>
+      <h1>Agent engineering practice — built to learn, not to ship.</h1>
+      <p class="page-sub">Real problems, real stacks, real design decisions. The goal is understanding how to build AI systems that actually work — not demos.</p>
+    </div>
+  </section>
+
+  <div class="container pet-page">
+
+    <div class="pet-project-card">
+      <div class="pet-project-top">
+        <div class="pet-project-title-row">
+          <h3 class="pet-project-title">SMB Digital Presence Agent</h3>
+          <span class="pet-project-status">Active</span>
+        </div>
+        <p class="pet-project-stack">Python · Claude API · Playwright · Streamlit · Pydantic v2 · HTTPX</p>
+      </div>
+
+      <div class="pet-project-body">
+
+        <div class="pet-project-block">
+          <div class="pet-project-label">The Problem</div>
+          <p>Most small service businesses in Charlotte — plumbers, roofers, HVAC companies, electricians — have a broken relationship with the internet. They're either completely absent or running a site built in 2014 that hasn't been touched since. The result: invisible in local search, invisible in AI-powered recommendations, losing inbound leads to competitors who spent $500 on a basic site.</p>
+          <p>Roughly 35–40% of local service businesses have no website at all. Of those that do, 60–70% haven't been updated in over three years. AI search tools increasingly surface businesses with structured web presence over those without — and that gap widens every year.</p>
+        </div>
+
+        <div class="pet-project-block">
+          <div class="pet-project-label">The Core Insight</div>
+          <p>The real split is binary: <strong>has a website</strong> (conversation is optimization — SEO, speed, conversion rate, mobile UX) vs. <strong>no website</strong> (conversation is existence — you are invisible to AI search and under-indexed in Google Maps). Building a system that detects this split and routes to different outreach angles is the central architectural decision. Same pipeline, two messages, meaningfully higher reply rate.</p>
+        </div>
+
+        <div class="pet-project-block">
+          <div class="pet-project-label">What I Built</div>
+          <p>An end-to-end multi-agent pipeline that discovers Charlotte SMBs via Google Maps scraping (no API cost), routes each into Track A or Track B based on whether a live website is detected, analyzes the appropriate gaps, scores each as an opportunity 0–100, discovers owner contact information, drafts track-specific cold emails, and queues everything for human review before any outreach goes out.</p>
+        </div>
+
+        <div class="pet-project-arch">
+          <div class="pet-project-arch-step">Google Maps Scraper (Playwright — free, no API)</div>
+          <div class="pet-project-arch-arrow">↓</div>
+          <div class="pet-project-arch-step">Website Router — live HEAD request to validate presence</div>
+          <div class="pet-project-arch-arrow">↓</div>
+          <div class="pet-project-arch-split">
+            <div class="pet-project-arch-track">
+              <div class="pet-project-arch-track-label">Track A · Has Website</div>
+              <div class="pet-project-arch-track-desc">Crawl → Website Analysis → Claude-scored SEO, UX, speed, conversion gaps</div>
+            </div>
+            <div class="pet-project-arch-track">
+              <div class="pet-project-arch-track-label">Track B · No Website</div>
+              <div class="pet-project-arch-track-desc">Presence reconstruction from GBP & directories → Claude-scored digital gap analysis</div>
+            </div>
+          </div>
+          <div class="pet-project-arch-arrow">↓</div>
+          <div class="pet-project-arch-step">Opportunity Scoring (0–100 · HIGH / MEDIUM / LOW)</div>
+          <div class="pet-project-arch-arrow">↓</div>
+          <div class="pet-project-arch-step">Contact Discovery</div>
+          <div class="pet-project-arch-arrow">↓</div>
+          <div class="pet-project-arch-step">Email Draft — branched by track (Claude)</div>
+          <div class="pet-project-arch-arrow">↓</div>
+          <div class="pet-project-arch-step pet-project-arch-step--accent">Human Review Queue → Send</div>
+        </div>
+
+        <div class="pet-project-block">
+          <div class="pet-project-label">Where It Stands</div>
+          <p>Pipeline runs end-to-end on real Charlotte data. The Google Maps scraper pulls businesses without an API key, the website router correctly identifies live vs. missing sites, the analysis agents produce scored outputs, and the email drafts are branched by track. A Streamlit dashboard lets me run a batch, review leads, and mark emails as sent.</p>
+          <p>What's next: validate scraper output quality against real reply rates, tune scoring thresholds, add Gmail API sending, and track conversion by track (A vs. B) to validate the two-angle hypothesis.</p>
+        </div>
+
+        <div class="pet-project-block">
+          <div class="pet-project-label">Why I Built It</div>
+          <p>Practice for agent engineering. The real design questions: how do you structure data flow across agents without it becoming a mess? Where does Claude add value vs. where is a heuristic good enough? How do you build a pipeline that degrades gracefully when API keys are missing? What does a human-in-the-loop system actually look like in practice? The SMB problem is real — but the primary output is a working agent system I understand end-to-end, not a business I'm ready to scale.</p>
+        </div>
+
+        <div class="pet-project-links">
+          <a href="https://github.com/rudiselbrett-lab" target="_blank" class="pet-project-link">github.com/rudiselbrett-lab ↗</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>Brett Rudisel · Charlotte, NC · AI Product Manager</p>
+    <p><a href="mailto:rudisel.brett@gmail.com">rudisel.brett@gmail.com</a> · <a href="https://linkedin.com/in/brett-rudisel" target="_blank">LinkedIn</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

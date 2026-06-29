@@ -17,6 +17,7 @@
       <li><a href="work.html" class="active">Work</a></li>
       <li><a href="philosophy.html">Philosophy</a></li>
       <li><a href="experience.html">Experience</a></li>
+      <li><a href="pet-projects.html">Pet Projects</a></li>
     </ul>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
   </div>
@@ -271,79 +272,6 @@
           <li>Custom Claude skills and agents built with Claude Code and the Anthropic API</li>
           <li>LOOP framework (Listen, Orient, Own a Wedge, Push, Measure) — built into a working web app prototype</li>
         </ul>
-      </div>
-    </details>
-
-    <details class="work-section" open>
-      <summary>
-        <div class="work-section-header">
-          <div class="work-section-meta">
-            <span class="work-company">Personal</span>
-            <span class="work-company-sep">·</span>
-            <span class="work-status-badge">Active Development</span>
-          </div>
-          <h2>Pet Projects</h2>
-          <p class="work-section-desc">Agent engineering practice — real problems, real stacks, built to understand the design decisions not the deliverable.</p>
-        </div>
-        <span class="work-chevron">▾</span>
-      </summary>
-      <div class="work-list-wrap">
-
-        <div class="pet-project-card">
-          <div class="pet-project-top">
-            <div class="pet-project-title-row">
-              <h3 class="pet-project-title">SMB Digital Presence Agent</h3>
-              <span class="pet-project-status">Active</span>
-            </div>
-            <p class="pet-project-stack">Python · Claude API · Playwright · Streamlit · Pydantic v2 · HTTPX</p>
-          </div>
-
-          <div class="pet-project-body">
-            <div class="pet-project-block">
-              <div class="pet-project-label">The Problem</div>
-              <p>Most small service businesses in Charlotte — plumbers, roofers, HVAC, electricians — are invisible in local search and AI-powered recommendations. Roughly 35–40% of local service businesses have no website at all; of those that do, 60–70% haven't been updated in over three years. AI search tools increasingly surface businesses with structured web presence over those without. This gap gets larger every year.</p>
-            </div>
-
-            <div class="pet-project-block">
-              <div class="pet-project-label">The Core Insight</div>
-              <p>The real split is binary: <strong>has a website</strong> (conversation is optimization — SEO, speed, conversion rate) vs. <strong>no website</strong> (conversation is existence — invisible to AI search and under-indexed in Google Maps). Building a system that detects this split and routes to different outreach angles is the central architectural decision. Same pipeline, two messages, meaningfully higher reply rate.</p>
-            </div>
-
-            <div class="pet-project-block">
-              <div class="pet-project-label">What I Built</div>
-              <p>An end-to-end multi-agent pipeline that discovers Charlotte SMBs via Google Maps scraping (no API cost), routes each into Track A (has website → optimization analysis) or Track B (no website → digital gap analysis), scores each as an opportunity 0–100, discovers owner contact info, and drafts track-specific cold emails — all queued for human review before anything sends.</p>
-            </div>
-
-            <div class="pet-project-arch">
-              <div class="pet-project-arch-step">Google Maps Scraper (Playwright)</div>
-              <div class="pet-project-arch-arrow">→</div>
-              <div class="pet-project-arch-step">Website Router</div>
-              <div class="pet-project-arch-arrow">→</div>
-              <div class="pet-project-arch-split">
-                <div class="pet-project-arch-track">
-                  <div class="pet-project-arch-track-label">Track A · Has Website</div>
-                  <div class="pet-project-arch-track-desc">Crawl → Analyze → Claude-score SEO, UX, conversion gaps</div>
-                </div>
-                <div class="pet-project-arch-track">
-                  <div class="pet-project-arch-track-label">Track B · No Website</div>
-                  <div class="pet-project-arch-track-desc">Presence reconstruction from GBP → Claude-score digital gap</div>
-                </div>
-              </div>
-              <div class="pet-project-arch-arrow">→</div>
-              <div class="pet-project-arch-step">Opportunity Scoring → Contact Discovery → Email Draft → Human Review Queue</div>
-            </div>
-
-            <div class="pet-project-block">
-              <div class="pet-project-label">Why I Built It</div>
-              <p>Practice for agent engineering. The real design questions: how do you structure data flow across agents without it becoming a mess? Where does Claude add value vs. where is a heuristic good enough? How do you build a pipeline that degrades gracefully when API keys are missing? What does a human-in-the-loop system actually look like? The SMB problem is real — but the primary output is a working agent system I understand end-to-end.</p>
-            </div>
-
-            <div class="pet-project-links">
-              <a href="https://github.com/rudiselbrett-lab" target="_blank" class="pet-project-link">github.com/rudiselbrett-lab ↗</a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </details>
 
