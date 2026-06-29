@@ -104,6 +104,48 @@
       </div>
     </div>
 
+    <div class="captains-log">
+      <div class="captains-log-header">
+        <h2 class="captains-log-title">Captain's Log</h2>
+        <p class="captains-log-sub">Running build log — what's shipping, what's breaking, what's next.</p>
+      </div>
+
+      <div class="log-entry">
+        <div class="log-entry-meta">
+          <span class="log-date">June 29, 2026</span>
+          <span class="log-tag">Session 1</span>
+        </div>
+        <div class="log-entry-body">
+
+          <div class="log-block">
+            <div class="log-block-label">What We Built</div>
+            <p>Started from a blank repo. Built a two-track SMB discovery system in Python. The core insight driving the whole thing: businesses either have a website or they don't — and those are two completely different sales conversations. The pipeline routes every business into Track A (has a website, optimization play) or Track B (no website, greenfield capture). Each track gets its own analysis, its own scoring, and its own email angle.</p>
+            <p>The pipeline runs end to end — scrapes Google Maps for local businesses, checks for a website, analyzes what's there or what's missing, scores the opportunity, and drafts a cold email. Everything lands in a review queue before anything gets sent. Built a Streamlit dashboard on top so you can run it, see results, and review emails without touching the command line.</p>
+          </div>
+
+          <div class="log-block">
+            <div class="log-block-label">What's Working</div>
+            <p>The structure is solid. Agent architecture, data models, two-track routing, scoring engine, review queue — all of that works. The Streamlit UI runs and the pipeline flows end to end.</p>
+            <p>The Google Maps scraper pulls real Charlotte businesses using Playwright with no API key required. Got that working today.</p>
+          </div>
+
+          <div class="log-block">
+            <div class="log-block-label">What We're Still Debugging</div>
+            <p>The scraper is the live piece we're actively tuning. Two problems hit today:</p>
+            <p><strong>First</strong> — Google Maps doesn't always list a website even when a business has one. Built a Google search fallback: if Maps comes up empty, search for the business name and look for their real site in organic results.</p>
+            <p><strong>Second</strong> — that fallback was too loose. It was returning false positives, crediting businesses with websites that weren't actually theirs. Fixed by requiring the domain to contain words from the business name before accepting it.</p>
+          </div>
+
+          <div class="log-block">
+            <div class="log-block-label">What's Next</div>
+            <p>Validate the scraper is returning clean data consistently. Once that's solid, add the Anthropic key to get real AI-scored analysis and proper personalized emails instead of template copy. After that — test actual reply rates on Track A vs Track B to see if the two-angle hypothesis holds.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </main>
 
