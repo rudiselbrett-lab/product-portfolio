@@ -539,7 +539,20 @@ details[open].phil-section > summary .phil-chevron { transform: rotate(180deg); 
 }
 
 .tl-body h2 { font-size: 1.0625rem; font-weight: 600; margin-bottom: 0.2rem; letter-spacing: -0.01em; }
-.tl-company { font-size: 0.8125rem; color: var(--text-3); margin-bottom: 1rem; }
+.tl-company { font-size: 0.8125rem; color: var(--text-3); margin-bottom: 0.875rem; }
+.tl-desc { font-size: 0.9rem; color: var(--text-2); line-height: 1.8; }
+
+.tl-roles { margin-bottom: 1rem; }
+.tl-role-row {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.tl-role-row:first-child { border-top: 1px solid var(--border); }
+.tl-role-title { font-size: 0.875rem; font-weight: 500; color: var(--text); }
+.tl-role-dates { font-size: 0.775rem; color: var(--text-3); white-space: nowrap; }
+
 .tl-bullets { padding-left: 1.125rem; }
 .tl-bullets li {
   font-size: 0.875rem; color: var(--text-2);
